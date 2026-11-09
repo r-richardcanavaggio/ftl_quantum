@@ -6,7 +6,6 @@ import os
 # load_dotenv()
 # api_key = os.getenv("IBM_API_KEY")
 
-
 # QiskitRuntimeService.save_account(
 #     token=api_key,
 #     name="open",
@@ -22,6 +21,5 @@ print("Real quantum computers:")
 for backend in backends:
     status = backend.status()
     print(f"{backend.name} has {status.pending_jobs} queues with {backend.num_qubits} qubits")
-
 
 # print(service.jobs())
